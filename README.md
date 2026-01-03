@@ -61,6 +61,46 @@ npm run build
 npm run preview
 ```
 
+The preview will be available at `http://localhost:4173`
+
+## Deployment
+
+The application is production-ready. The build process includes:
+
+- ✅ TypeScript type checking
+- ✅ Code minification and optimization
+- ✅ Automatic code splitting and chunking
+- ✅ Console log removal in production
+- ✅ Error boundary for better error handling
+- ✅ Optimized asset organization
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `dist/` directory.
+
+### Deploy to Static Hosting
+
+The `dist/` folder contains all the static files needed for deployment. You can deploy to:
+
+- **Vercel**: Connect your repository or run `vercel --prod`
+- **Netlify**: Drag and drop the `dist/` folder or connect your repository
+- **GitHub Pages**: Use the `dist/` folder as the source
+- **AWS S3 + CloudFront**: Upload `dist/` contents to an S3 bucket
+- **Any static hosting service**: Serve the `dist/` folder contents
+
+### Production Features
+
+- Optimized bundle sizes with code splitting
+- Minified JavaScript and CSS
+- Removed console logs and debuggers
+- Error boundary for graceful error handling
+- SEO-friendly meta tags
+- Responsive design
+
 ## Data Storage
 
 All data (tasks, time entries, notes) is stored locally in your browser's localStorage. Your data never leaves your device.
